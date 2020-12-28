@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import cannabis from '../images/cannabis.svg'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      {/* <span className="icon fa-diamond"></span> */}
+      <img src={cannabis} alt=" " />
     </div>
     <div className="content">
       <div className="inner">

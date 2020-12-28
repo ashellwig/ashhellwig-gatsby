@@ -9,5 +9,8 @@
     "prettier.packageManager": "npm",
     "[javascript]": {
         "editor.formatOnSave": true
-    }
+    },
+    "cSpell.words": [
+        "propicbad"
+    ]
 }
