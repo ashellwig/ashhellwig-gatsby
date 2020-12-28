@@ -10,8 +10,17 @@
     "[javascript]": {
         "editor.formatOnSave": true
     },
+    /* General Editor */
+    // Files
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+    // Spell Checker
     "cSpell.words": [
         "holdingichigo",
-        "propicbad"
+        "images",
+        "propicbad",
+        "resumecannabis",
+        "trinitybitework"
     ]
 }

@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
+import imageTrinityBitework from '../images/trinitybitework.jpg'
 import holdingIchigo from '../images/holdingichigo.jpg'
 import marchOnCapitalHill from '../images/video/March-Capital-Hill.mp4'
 import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
 import marchWaiting from '../images/video/march-waiting.mp4'
+import ResumeCannabis from './ResumeCannabis'
 
 class Main extends React.Component {
   render() {
@@ -56,14 +56,11 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">experience</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
-          <p>
-            This page is still under construction. Please contact&nbsp;
-            <a href="mailto:ash@ashwigltd.com">ash@ashwigltd.com</a>&nbsp; with
-            any business related inquiries.
-          </p>
+
+          <div>
+            <ResumeCannabis />
+          </div>
+
           {close}
         </article>
 
@@ -77,7 +74,7 @@ class Main extends React.Component {
           <h2 className="major">media</h2>
           <span className="image main">
             {/* Image: Training Trinity */}
-            <img src={pic01} alt="" />
+            <img src={imageTrinityBitework} alt="" />
             <br></br>
             {/* Video: March Waiting */}
             <video muted controls style={{ justifyContent: 'center' }}>
