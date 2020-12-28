@@ -2,17 +2,17 @@ import React, { useState } from 'react'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import 'react-pdf/dist/esm/Page/AnnotationLayer'
 
-import '../assets/scss/components/_resumecannabis.scss'
-import cannabisResumeFile from '../images/Ashton_S_Hellwig_Resume_Cannabis.pdf'
+import '../assets/scss/components/_ResumeDevIT.scss'
+import devITResumeFile from '../images/Ashton_S_Hellwig_Resume_IT.pdf'
 
 const options = {
     cMapsUrl: 'cmaps/',
     cMapPacked: false
 }
 
-export default function ResumeCannabis() {
+export default function ResumeDevIT() {
   const [file] = useState(
-    cannabisResumeFile
+    devITResumeFile
   )
   const [numPages, setNumPages] = useState(null)
 
@@ -21,8 +21,8 @@ export default function ResumeCannabis() {
   }
 
   return (
-    <div className="ResumeCannabis">
-      <div className="ResumeCannabis__container">
+    <div className="ResumeDevIT">
+      <div className="ResumeDevIT__container">
         <div className="Example__container__document">
           <Document
             file={file}
