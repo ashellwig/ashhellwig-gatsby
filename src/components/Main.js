@@ -3,6 +3,9 @@ import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import marchOnCapitalHill from '../images/video/March-Capital-Hill.mp4'
+import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
+import marchWaiting from '../images/video/march-waiting.mp4'
 
 class Main extends React.Component {
   render() {
@@ -68,7 +71,23 @@ class Main extends React.Component {
         >
           <h2 className="major">media</h2>
           <span className="image main">
+            {/* Image: Training Trinity */}
             <img src={pic01} alt="" />
+            <br></br>
+            {/* Video: March Waiting */}
+            <video muted controls style={{ justifyContent: 'center' }}>
+              <source src={marchWaiting} type="video/mp4" />
+            </video>
+            <br></br>
+            {/* Video: March on Capital Hill */}
+            <video muted controls>
+              <source src={marchOnCapitalHill} type="video/mp4" />
+            </video>
+            <br></br>
+            {/* Video: March on Union Station */}
+            <video muted controls style={{ justifyContent: 'center' }}>
+              <source src={marchOnUnionStation} type="video/mp4" />
+            </video>
           </span>
           <p>{close}</p>
         </article>
