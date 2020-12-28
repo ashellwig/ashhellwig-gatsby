@@ -10,9 +10,13 @@ import marchWaiting from '../images/video/march-waiting.mp4'
 class Main extends React.Component {
   render() {
     let close = (
+      /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
       <div
         className="close"
         onClick={() => {
+          this.props.onCloseArticle()
+        }}
+        onKeyPress={() => {
           this.props.onCloseArticle()
         }}
       ></div>
