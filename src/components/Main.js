@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import holdingIchigo from '../images/holdingichigo.jpg'
 import marchOnCapitalHill from '../images/video/March-Capital-Hill.mp4'
 import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
 import marchWaiting from '../images/video/march-waiting.mp4'
@@ -33,12 +33,13 @@ class Main extends React.Component {
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={holdingIchigo} alt="" />
           </span>
           <p>
-            This page is still under construction. Please contact&nbsp;
-            <a href="mailto:ash@ashwigltd.com">ash@ashwigltd.com</a>&nbsp; with
-            any business related inquiries.
+            Colorado-based pure mathematics student and experienced compliance
+            professional in Colorado`s regulated marijuana industry. Outside of
+            the world of technology and Cannabis, I train dogs for protection
+            and off-leash obedience at Mountain Canine College in Evergreen, CO.
           </p>
           {close}
         </article>
