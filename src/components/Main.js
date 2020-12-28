@@ -30,7 +30,7 @@ class Main extends React.Component {
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={pic03} alt="" />
           </span>
           <p>
             This page is still under construction. Please contact&nbsp;
@@ -68,14 +68,9 @@ class Main extends React.Component {
         >
           <h2 className="major">media</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={pic01} alt="" />
           </span>
-          <p>
-            This page is still under construction. Please contact&nbsp;
-            <a href="mailto:ash@ashwigltd.com">ash@ashwigltd.com</a>&nbsp; with
-            any business related inquiries.
-            {close}
-          </p>
+          <p>{close}</p>
         </article>
 
         <article
