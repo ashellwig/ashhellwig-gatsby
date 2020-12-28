@@ -90,7 +90,7 @@ class Main extends React.Component {
               <source src={marchOnUnionStation} type="video/mp4" />
             </video>
           </span>
-          <p>{close}</p>
+          {close}
         </article>
 
         <article

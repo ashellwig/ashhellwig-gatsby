@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import cannabis from '../images/cannabis.svg'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
