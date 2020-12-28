@@ -1,0 +1,13 @@
+{
+    // Javascript
+    "javascript.format.enable": false,
+    "typescript.format.enable": false,
+    "javascript.validate.enable": false,
+    "npm.validate.enable": true,
+    "eslint.packageManager": "npm",
+    "npm.packageManager": "npm",
+    "prettier.packageManager": "npm",
+    "[javascript]": {
+        "editor.formatOnSave": true
+    }
+}
