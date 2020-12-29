@@ -3,7 +3,7 @@ import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import 'react-pdf/dist/esm/Page/AnnotationLayer'
 
 import '../assets/scss/components/_ResumeDevIT.scss'
-import devITResumeFile from '../images/Ashton_S_Hellwig_Resume_IT.pdf'
+import devITResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_IT.pdf'
 
 const options = {
     cMapsUrl: 'cmaps/',

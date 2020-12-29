@@ -3,7 +3,7 @@ import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import 'react-pdf/dist/esm/Page/AnnotationLayer'
 
 import '../assets/scss/components/_resumecannabis.scss'
-import cannabisResumeFile from '../images/Ashton_S_Hellwig_Resume_Cannabis.pdf'
+import cannabisResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_Cannabis.pdf'
 
 const options = {
     cMapsUrl: 'cmaps/',
