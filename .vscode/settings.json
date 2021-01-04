@@ -13,8 +13,14 @@
     /* General Editor */
     // Files
     "files.associations": {
-        "*.js": "javascriptreact"
+        "*.js": "javascriptreact",
+        "/LICENSE/*": "license"
     },
+    // Licensing
+    "licenser.author": "Ash Hellwig",
+    "licenser.license": "AGPLv3",
+    "licenser.useSingleLineStyle": true,
+    "licenser.projectName": "Ash Hellwig's Personal Website",
     // Spell Checker
     "cSpell.words": [
         "cmaps",
