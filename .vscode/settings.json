@@ -6,7 +6,6 @@
     "npm.validate.enable": true,
     "eslint.packageManager": "npm",
     "npm.packageManager": "npm",
-    "prettier.packageManager": "npm",
     "[javascript]": {
         "editor.formatOnSave": true
     },
@@ -22,6 +21,7 @@
     "licenser.useSingleLineStyle": true,
     "licenser.projectName": "Ash Hellwig's Personal Website",
     // Spell Checker
+    "cSpell.enabled": false,
     "cSpell.words": [
         "'s",
         "ashwigltd",

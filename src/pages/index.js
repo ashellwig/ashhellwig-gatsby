@@ -5,6 +5,8 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
+import '../assets/css/client-list.css'
+
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)

@@ -5,6 +5,7 @@ import holdingIchigo from '../images/holdingichigo.jpg'
 import marchOnCapitalHill from '../images/video/March-Capital-Hill.mp4'
 import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
 import marchWaiting from '../images/video/march-waiting.mp4'
+import ClientList from './clientList'
 import ResumeCannabis from './ResumeCannabis'
 import ResumeDevIT  from './ResumeDevIT'
 
@@ -59,13 +60,18 @@ class Main extends React.Component {
           <h2 className="major">experience</h2>
 
           <div>
-            <h3>Cannabis and Industrial Hemp</h3>
-            <ResumeCannabis />
+            <h3>Consulting and Development Clients</h3>
+            <ClientList />
           </div>
 
           <div>
             <h3>Software Development and IT Systems Administration</h3>
             <ResumeDevIT />
+          </div>
+
+          <div>
+            <h3>Cannabis and Industrial Hemp</h3>
+            <ResumeCannabis />
           </div>
 
           {close}
