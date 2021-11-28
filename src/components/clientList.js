@@ -20,7 +20,7 @@ import clientLilPinksPastries from '../images/clientLogos/client-lilpinkspastrie
 import clientHotDishHoney from '../images/clientLogos/client-hotdishhoney.png'
 import '../assets/css/client-list.css'
 
-const ClientListDesktop = () => (
+const ClientList = () => (
   <div className="parent">
     {/* ---- IgadI ---- */}
     <div className="div1">
