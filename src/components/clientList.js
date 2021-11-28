@@ -20,29 +20,49 @@ import clientLilPinksPastries from '../images/clientLogos/client-lilpinkspastrie
 import clientHotDishHoney from '../images/clientLogos/client-hotdishhoney.png'
 import '../assets/css/client-list.css'
 
-const ClientList = () => (
+const ClientListDesktop = () => (
   <div className="parent">
     {/* ---- IgadI ---- */}
     <div className="div1">
-      <a className="client-link" href="https://www.igadiltd.com/">
+      <a
+        className="client-link"
+        href="https://www.igadiltd.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img alt="Logo - IgadI" src={clientIgadi} width="200px" />
       </a>
     </div>
     {/* ---- Wolfpac Cannabis ---- */}
     <div className="div2">
-      <a className="client-link" href="https://www.wolfpaccannabis.com/">
+      <a
+        className="client-link"
+        href="https://www.wolfpaccannabis.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img alt="Logo - Wolfpac" src={clientWolfpac} width="125px" />
       </a>
     </div>
     {/* ---- The Clear ---- */}
     <div className="div3">
-      <a className="client-link" href="https://clearcannabisinc.com/">
+      <a
+        className="client-link"
+        href="https://clearcannabisinc.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img alt="Logo - The Clear" src={clientTheClear} width="200px" />
       </a>
     </div>
     {/* ---- Lil Pink's Pastries ---- */}
     <div className="div4">
-      <a className="client-link" href="https://lilpinkspastries.com">
+      <a
+        className="client-link"
+        href="https://lilpinkspastries.com"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img
           alt="Logo - Lil Pink's Pastries"
           src={clientLilPinksPastries}
@@ -52,7 +72,12 @@ const ClientList = () => (
     </div>
     {/* ---- Hot Dish Honey ---- */}
     <div className="div5">
-      <a className="client-link" href="https://www.hotdishhoney.com">
+      <a
+        className="client-link"
+        href="https://www.hotdishhoney.com"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img
           alt="Logo - Hot Dish Honey"
           src={clientHotDishHoney}
