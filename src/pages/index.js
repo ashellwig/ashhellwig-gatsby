@@ -1,11 +1,23 @@
 import React from 'react'
-import Layout from '../components/layout'
+import ReactBreakpoints from 'react-breakpoints'
 
+import Layout from '../components/layout'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
-import '../assets/css/client-list.css'
+// import '../assets/css/client-list.css'
+// import '../assets/css/client-list-mobile.css'
+
+const breakpoints = {
+  mobile: 320,
+  mobileLandscape: 480,
+  tablet: 768,
+  tabletLandscape: 1024,
+  desktop: 1200,
+  desktopLarge: 1500,
+  desktopWide: 1920
+}
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -93,6 +105,7 @@ class IndexPage extends React.Component {
 
   render() {
     return (
+      <ReactBreakpoints breakpoints={breakpoints}>
       <Layout location={this.props.location}>
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
@@ -110,6 +123,7 @@ class IndexPage extends React.Component {
           <div id="bg"></div>
         </div>
       </Layout>
+      </ReactBreakpoints>
     )
   }
 }

@@ -1,16 +1,22 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import { withBreakpoints } from 'react-breakpoints'
+
 import imageTrinityBitework from '../images/trinitybitework.jpg'
 import holdingIchigo from '../images/holdingichigo.jpg'
 import marchOnCapitalHill from '../images/video/March-Capital-Hill.mp4'
 import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
 import marchWaiting from '../images/video/march-waiting.mp4'
+
 import ClientList from './clientList'
 import ResumeCannabis from './ResumeCannabis'
-import ResumeDevIT  from './ResumeDevIT'
+import ResumeDevIT from './ResumeDevIT'
+import ClientListMobile from './ClientListMobile'
 
 class Main extends React.Component {
   render() {
+    const { breakpoints, currentBreakpoint } = this.props
+
     let close = (
       /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
       <div
@@ -61,7 +67,13 @@ class Main extends React.Component {
 
           <div>
             <h3>Consulting and Development Clients</h3>
-            <ClientList />
+            <div>
+              {breakpoints[currentBreakpoint] >= breakpoints.mobileLandscape ? (
+                <ClientList />
+              ) : (
+                <ClientListMobile />
+              )}
+            </div>
           </div>
 
           <div>
@@ -192,4 +204,4 @@ Main.propTypes = {
   setWrapperRef: PropTypes.func.isRequired,
 }
 
-export default Main
+export default withBreakpoints(Main)

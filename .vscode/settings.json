@@ -7,7 +7,12 @@
     "eslint.packageManager": "npm",
     "npm.packageManager": "npm",
     "[javascript]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2
     },
     /* General Editor */
     // Files
