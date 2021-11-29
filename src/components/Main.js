@@ -102,7 +102,12 @@ class Main extends React.Component {
             <img src={imageTrinityBitework} alt="" />
             <br></br>
             {/* Video: March Waiting */}
-            <video muted controls style={{ justifyContent: 'center' }}>
+            <video
+              muted
+              width="200px"
+              controls
+              style={{ justifyContent: 'center' }}
+            >
               <source src={marchWaiting} type="video/mp4" />
             </video>
             <br></br>
@@ -112,7 +117,12 @@ class Main extends React.Component {
             </video>
             <br></br>
             {/* Video: March on Union Station */}
-            <video muted controls style={{ justifyContent: 'center' }}>
+            <video
+              muted
+              width="200x"
+              controls
+              style={{ justifyContent: 'center' }}
+            >
               <source src={marchOnUnionStation} type="video/mp4" />
             </video>
           </span>
