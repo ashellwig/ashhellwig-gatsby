@@ -1,0 +1,4 @@
+**/node_modules/**
+/gatsby-*.js
+**/public/**
+**/.cache/**

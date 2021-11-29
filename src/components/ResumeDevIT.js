@@ -6,14 +6,12 @@ import '../assets/scss/components/_resumedevit.scss'
 import devITResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_IT.pdf'
 
 const options = {
-    cMapsUrl: 'cmaps/',
-    cMapPacked: false
+  cMapsUrl: 'cmaps/',
+  cMapPacked: false
 }
 
 export default function ResumeDevIT() {
-  const [file] = useState(
-    devITResumeFile
-  )
+  const [file] = useState(devITResumeFile)
   const [numPages, setNumPages] = useState(null)
 
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {

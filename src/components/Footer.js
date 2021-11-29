@@ -12,7 +12,7 @@ const Footer = props => (
 )
 
 Footer.propTypes = {
-  timeout: PropTypes.bool,
+  timeout: PropTypes.bool
 }
 
 export default Footer

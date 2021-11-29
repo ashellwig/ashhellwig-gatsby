@@ -6,14 +6,12 @@ import '../assets/scss/components/_resumecannabis.scss'
 import cannabisResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_Cannabis.pdf'
 
 const options = {
-    cMapsUrl: 'cmaps/',
-    cMapPacked: false
+  cMapsUrl: 'cmaps/',
+  cMapPacked: false
 }
 
 export default function ResumeCannabis() {
-  const [file] = useState(
-    cannabisResumeFile
-  )
+  const [file] = useState(cannabisResumeFile)
   const [numPages, setNumPages] = useState(null)
 
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {

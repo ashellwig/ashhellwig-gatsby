@@ -36,12 +36,12 @@ const Layout = ({ children, location }) => {
             meta={[
               {
                 name: 'description',
-                content: 'Personal website for Ashton S. Hellwig',
+                content: 'Personal website for Ashton S. Hellwig'
               },
               {
                 name: 'keywords',
-                content: 'personal, site, developer, portfolio',
-              },
+                content: 'personal, site, developer, portfolio'
+              }
             ]}
           >
             <html lang="en" />
@@ -54,7 +54,7 @@ const Layout = ({ children, location }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout
