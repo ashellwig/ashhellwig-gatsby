@@ -49,9 +49,19 @@ class Main extends React.Component {
           </span>
           <p>
             Colorado-based pure mathematics student and experienced compliance
-            professional in Colorado`s regulated marijuana industry. Outside of
-            the world of technology and Cannabis, I train dogs for protection
-            and off-leash obedience at Mountain Canine College in Evergreen, CO.
+            professional in Colorado&apos;s regulated marijuana industry.
+          </p>
+          <p>
+            Experienced PHP, JavaScript, Python, Rust, and C++ developer. In
+            this industry, my main focus is on the&nbsp;
+            &quot;<i>backend and systems-side</i>&quot;&nbsp; of development.
+            Please see my{' '} <i>IT and Development</i>&nbsp;resume under&nbsp;
+            <i>experience</i> for more information.
+          </p>
+          <p>
+            Outside of the world of technology and Cannabis, I train dogs for
+            protection and off-leash obedience at Mountain Canine College in
+            Evergreen, CO.
           </p>
           {close}
         </article>
