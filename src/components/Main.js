@@ -12,6 +12,7 @@ import ClientList from './clientList'
 import ResumeCannabis from './ResumeCannabis'
 import ResumeDevIT from './ResumeDevIT'
 import ClientListMobile from './ClientListMobile'
+import ContactForm from './ContactForm'
 
 class Main extends React.Component {
   render() {
@@ -78,7 +79,7 @@ class Main extends React.Component {
           <div>
             <h3>Consulting and Development Clients</h3>
             <div>
-              {breakpoints[currentBreakpoint] > breakpoints.mobileLandscape ? (
+              {breakpoints[currentBreakpoint] >= breakpoints.mobileLandscape ? (
                 <ClientList />
               ) : (
                 <ClientListMobile />
@@ -147,11 +148,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <p>
-            This page is still under construction. Please contact&nbsp;
-            <a href="mailto:ash@ashwigltd.com">ash@ashwigltd.com</a>&nbsp; with
-            any business related inquiries.
-          </p>
+          <ContactForm />
           <ul className="icons">
             <li>
               <a
