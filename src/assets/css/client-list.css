@@ -23,7 +23,7 @@
   grid-template-columns: repeat(6, 1fr);
 }
 
-/* Client Logo:  IgadI*/
+/* Client Logo: IgadI*/
 .div1 {
   grid-area: 1 / 1 / 3 / 3;
   justify-content: center;
