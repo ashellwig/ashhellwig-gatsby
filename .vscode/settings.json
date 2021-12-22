@@ -33,25 +33,7 @@
     // Files
     "files.associations": {
         "*.js": "javascriptreact",
-        "/LICENSE/*": "license"
-    },
-    // Licensing
-    "licenser.author": "Ash Hellwig",
-    "licenser.license": "AGPLv3",
-    "licenser.useSingleLineStyle": true,
-    "licenser.projectName": "Ash Hellwig's Personal Website",
-    // Spell Checker
-    "cSpell.enabled": false,
-    "cSpell.words": [
-        "'s",
-        "ashwigltd",
-        "cmaps",
-        "hellwig",
-        "hellwig's",
-        "holdingichigo",
-        "images",
-        "propicbad",
-        "resumecannabis",
-        "trinitybitework"
-    ]
+        "LICENSE": "plaintext",
+        "/Additional-Licenses/*": "plaintext"
+    }
 }
