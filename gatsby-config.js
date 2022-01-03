@@ -50,4 +50,7 @@ module.exports = {
     },
     'gatsby-plugin-sass',
   ],
+  flags: {
+    DEV_SSR: false,
+  },
 }
