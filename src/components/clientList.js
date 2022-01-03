@@ -21,7 +21,7 @@ import clientHotDishHoney from '../images/clientLogos/client-hotdishhoney.png'
 import '../assets/css/client-list.css'
 
 const ClientList = () => (
-  <div className="parent">
+  <div className="grid">
     {/* ---- IgadI ---- */}
     <div className="div1">
       <a
