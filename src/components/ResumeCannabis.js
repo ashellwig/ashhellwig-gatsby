@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
+import { pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer'
 
 import '../assets/scss/components/_resumecannabis.scss'
 import cannabisResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_Cannabis.pdf'
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 const options = {
   cMapsUrl: 'cmaps/',
