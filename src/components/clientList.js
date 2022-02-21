@@ -22,37 +22,20 @@ import '../assets/css/client-list.css'
 
 const ClientList = () => (
   <div className="grid">
-    {/* ---- IgadI ---- */}
-    <div className="div1">
+    {/* ---- Hot Dish Honey ---- */}
+    <div className="div5">
       <a
         className="client-link"
-        href="https://www.igadiltd.com/"
+        href="https://www.hotdishhoney.com"
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="Logo - IgadI" src={clientIgadi} width="200px" />
-      </a>
-    </div>
-    {/* ---- Wolfpac Cannabis ---- */}
-    <div className="div2">
-      <a
-        className="client-link"
-        href="https://www.wolfpaccannabis.com/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img alt="Logo - Wolfpac" src={clientWolfpac} width="125px" />
-      </a>
-    </div>
-    {/* ---- The Clear ---- */}
-    <div className="div3">
-      <a
-        className="client-link"
-        href="https://clearcannabisinc.com/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img alt="Logo - The Clear" src={clientTheClear} width="200px" />
+        <img
+          alt="Logo - Hot Dish Honey"
+          src={clientHotDishHoney}
+          width="200px"
+          style={{ justifyContent: 'center' }}
+        />
       </a>
     </div>
     {/* ---- Lil Pink's Pastries ---- */}
@@ -70,20 +53,37 @@ const ClientList = () => (
         />
       </a>
     </div>
-    {/* ---- Hot Dish Honey ---- */}
-    <div className="div5">
+    {/* ---- The Clear ---- */}
+    <div className="div3">
       <a
         className="client-link"
-        href="https://www.hotdishhoney.com"
+        href="https://clearcannabisinc.com/"
         target="_blank"
         rel="noreferrer"
       >
-        <img
-          alt="Logo - Hot Dish Honey"
-          src={clientHotDishHoney}
-          width="200px"
-          style={{ justifyContent: 'center' }}
-        />
+        <img alt="Logo - The Clear" src={clientTheClear} width="200px" />
+      </a>
+    </div>
+    {/* ---- Wolfpac Cannabis ---- */}
+    <div className="div2">
+      <a
+        className="client-link"
+        href="https://www.wolfpaccannabis.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img alt="Logo - Wolfpac" src={clientWolfpac} width="125px" />
+      </a>
+    </div>
+    {/* ---- IgadI ---- */}
+    <div className="div1">
+      <a
+        className="client-link"
+        href="https://www.igadiltd.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img alt="Logo - IgadI" src={clientIgadi} width="200px" />
       </a>
     </div>
   </div>
