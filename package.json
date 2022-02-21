@@ -8,6 +8,7 @@
     "url": "https://ashhellwig.netlify.app"
   },
   "dependencies": {
+    "canvas": "^2.9.0",
     "gatsby": "^2.19.5",
     "gatsby-plugin-google-analytics": "^2.8.0",
     "gatsby-plugin-manifest": "^2.2.38",
