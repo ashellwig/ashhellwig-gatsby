@@ -23,7 +23,7 @@ import '../assets/css/client-list.css'
 const ClientList = () => (
   <div className="grid">
     {/* ---- Hot Dish Honey ---- */}
-    <div className="div5">
+    <div className="div1">
       <a
         className="client-link"
         href="https://www.hotdishhoney.com"
@@ -39,7 +39,7 @@ const ClientList = () => (
       </a>
     </div>
     {/* ---- Lil Pink's Pastries ---- */}
-    <div className="div4">
+    <div className="div2">
       <a
         className="client-link"
         href="https://lilpinkspastries.com"
@@ -65,7 +65,7 @@ const ClientList = () => (
       </a>
     </div>
     {/* ---- Wolfpac Cannabis ---- */}
-    <div className="div2">
+    <div className="div4">
       <a
         className="client-link"
         href="https://www.wolfpaccannabis.com/"
@@ -76,7 +76,7 @@ const ClientList = () => (
       </a>
     </div>
     {/* ---- IgadI ---- */}
-    <div className="div1">
+    <div className="div5">
       <a
         className="client-link"
         href="https://www.igadiltd.com/"
