@@ -15,8 +15,32 @@ import ClientListMobile from './ClientListMobile'
 import ContactForm from './ContactForm'
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isMobile: false
+    }
+
+    this.updatePredicate = this.updatePredicate.bind(this)
+  }
+
+  componentDidMount() {
+    this.updatePredicate()
+
+    window.addEventListener('resize', this.updatePredicate)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updatePredicate)
+  }
+
+  updatePredicate() {
+    this.setState({ isMobile: window.innerWidth <= 1449 })
+  }
+
   render() {
-    const { breakpoints, currentBreakpoint } = this.props
+    // const { breakpoints, currentBreakpoint } = this.props
+    const isMobile = this.state.isMobile
 
     let close = (
       /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
@@ -54,9 +78,9 @@ class Main extends React.Component {
           </p>
           <p>
             Experienced PHP, JavaScript, Python, Rust, and C++ developer. In
-            this industry, my main focus is on the&nbsp;
-            &quot;<i>backend and systems-side</i>&quot;&nbsp; of development.
-            Please see my{' '} <i>IT and Development</i>&nbsp;resume under&nbsp;
+            this industry, my main focus is on the&nbsp; &quot;
+            <i>backend and systems-side</i>&quot;&nbsp; of development. Please
+            see my <i>IT and Development</i>&nbsp;resume under&nbsp;
             <i>experience</i> for more information.
           </p>
           <p>
@@ -79,10 +103,14 @@ class Main extends React.Component {
           <div>
             <h3>Consulting and Development Clients</h3>
             <div>
-              {breakpoints[currentBreakpoint] >= breakpoints.mobileLandscape ? (
-                <ClientList />
+              {isMobile ? (
+                <div>
+                  <ClientList />
+                </div>
               ) : (
-                <ClientListMobile />
+                <div>
+                  <ClientListMobile />
+                </div>
               )}
             </div>
           </div>
