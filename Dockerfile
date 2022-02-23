@@ -1,13 +1,12 @@
-FROM node:latest as build
+FROM node:14 as build
 
 RUN mkdir /app
 WORKDIR /app
-COPY package*.json .
-RUN npm install
 COPY . .
+RUN npm install
 RUN npm run build
 
-FROM python:latest as serve
+FROM nginx as serve
 
-WORKDIR /app
-RUN python -m http.server -d dist
+EXPOSE 80
+COPY --from=build /app/public /usr/share/nginx/html
