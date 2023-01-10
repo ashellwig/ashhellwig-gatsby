@@ -9,7 +9,7 @@ import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
 import marchWaiting from '../images/video/march-waiting.mp4'
 
 import ClientList from './clientList'
-import ResumeCannabis from './ResumeCannabis'
+// import ResumeCannabis from './ResumeCannabis'
 import ResumeDevIT from './ResumeDevIT'
 import ClientListMobile from './ClientListMobile'
 import ContactForm from './ContactForm'
@@ -73,7 +73,7 @@ class Main extends React.Component {
             <img src={holdingIchigo} alt="" />
           </span>
           <p>
-            Colorado-based pure mathematics student and experienced compliance
+            Colorado-based BigData SQL Developer and experienced compliance
             professional in Colorado&apos;s regulated marijuana industry.
           </p>
           <p>
@@ -120,10 +120,10 @@ class Main extends React.Component {
             <ResumeDevIT />
           </div>
 
-          <div>
+          {/* <div>
             <h3>Cannabis and Industrial Hemp</h3>
             <ResumeCannabis />
-          </div>
+          </div> */}
 
           {close}
         </article>
