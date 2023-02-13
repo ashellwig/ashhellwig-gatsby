@@ -10,7 +10,7 @@ import marchWaiting from '../images/video/march-waiting.mp4'
 
 import ClientList from './clientList'
 // import ResumeCannabis from './ResumeCannabis'
-import ResumeDevIT from './ResumeDevIT'
+// import ResumeDevIT from './ResumeDevIT'
 import ClientListMobile from './ClientListMobile'
 import ContactForm from './ContactForm'
 
