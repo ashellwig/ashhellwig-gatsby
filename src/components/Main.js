@@ -115,10 +115,10 @@ class Main extends React.Component {
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <h3>Software Development and IT Systems Administration</h3>
             <ResumeDevIT />
-          </div>
+          </div> */}
 
           {/* <div>
             <h3>Cannabis and Industrial Hemp</h3>
