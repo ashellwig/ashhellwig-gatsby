@@ -3,15 +3,24 @@
     "javascript.format.enable": false,
     "typescript.format.enable": false,
     "javascript.validate.enable": false,
-    "npm.validate.enable": true,
-    "eslint.packageManager": "npm",
+    "editor.formatOnSaveMode": "file",
     "npm.packageManager": "npm",
     "[javascript]": {
+        "editor.formatOnType": false,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.fixAll": true
+            "source.fixAll": "explicit"
         },
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+        "editor.tabSize": 2
+    },
+    "[javascriptreact]": {
+        "editor.formatOnType": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        },
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
         "editor.tabSize": 2
     },
     // CSS

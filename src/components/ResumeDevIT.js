@@ -4,7 +4,7 @@ import { pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer'
 
 import '../assets/scss/components/_resumedevit.scss'
-import devITResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_DB.pdf'
+import devITResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_Cloud.pdf'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 

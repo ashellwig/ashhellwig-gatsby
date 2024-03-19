@@ -9,7 +9,6 @@ import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
 import marchWaiting from '../images/video/march-waiting.mp4'
 
 import ClientList from './clientList'
-// import ResumeCannabis from './ResumeCannabis'
 // import ResumeDevIT from './ResumeDevIT'
 import ClientListMobile from './ClientListMobile'
 import ContactForm from './ContactForm'
@@ -18,7 +17,7 @@ class Main extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isMobile: false
+      isNotMobile: false
     }
 
     this.updatePredicate = this.updatePredicate.bind(this)
@@ -35,12 +34,13 @@ class Main extends React.Component {
   }
 
   updatePredicate() {
-    this.setState({ isMobile: window.innerWidth <= 1449 })
+    // this.setState({ isNotMobile: window.innerWidth <= 1449 })
+    this.setState({ isNotMobile: window.innerWidth >= 800 })
   }
 
   render() {
     // const { breakpoints, currentBreakpoint } = this.props
-    const isMobile = this.state.isMobile
+    const isNotMobile = this.state.isNotMobile
 
     let close = (
       /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
@@ -103,7 +103,7 @@ class Main extends React.Component {
           <div>
             <h3>Consulting and Development Clients</h3>
             <div>
-              {isMobile ? (
+              {isNotMobile ? (
                 <div>
                   <ClientList />
                 </div>
@@ -118,11 +118,6 @@ class Main extends React.Component {
           {/* <div>
             <h3>Software Development and IT Systems Administration</h3>
             <ResumeDevIT />
-          </div> */}
-
-          {/* <div>
-            <h3>Cannabis and Industrial Hemp</h3>
-            <ResumeCannabis />
           </div> */}
 
           {close}
