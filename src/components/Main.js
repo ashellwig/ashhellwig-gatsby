@@ -9,7 +9,7 @@ import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
 import marchWaiting from '../images/video/march-waiting.mp4'
 
 import ClientList from './clientList'
-// import ResumeDevIT from './ResumeDevIT'
+import ResumeDevIT from './ResumeDevIT'
 import ClientListMobile from './ClientListMobile'
 import ContactForm from './ContactForm'
 
@@ -73,18 +73,19 @@ class Main extends React.Component {
             <img src={holdingIchigo} alt="" />
           </span>
           <p>
-            Colorado-based BigData SQL Developer and experienced compliance
-            professional in Colorado&apos;s regulated marijuana industry.
+            Colorado-based BigData Data Engineer and experienced Python
+            developer. Most of the industries I focus on are financial
+            technology, oil &amp; gas, and medical technology.
           </p>
           <p>
-            Experienced PHP, JavaScript, Python, Rust, and C++ developer. In
+            Experienced TeraData, Hive, and Python developer. In
             this industry, my main focus is on the&nbsp; &quot;
             <i>backend and systems-side</i>&quot;&nbsp; of development. Please
-            see my <i>IT and Development</i>&nbsp;resume under&nbsp;
+            see myresume under&nbsp;
             <i>experience</i> for more information.
           </p>
           <p>
-            Outside of the world of technology and Cannabis, I train dogs for
+            Outside of working in technology, I train dogs for
             protection and off-leash obedience at Mountain Canine College in
             Evergreen, CO.
           </p>
@@ -115,10 +116,10 @@ class Main extends React.Component {
             </div>
           </div>
 
-          {/* <div>
-            <h3>Software Development and IT Systems Administration</h3>
+          <div style={{justifyContent: 'center'}}>
+            <h3>Resume</h3>
             <ResumeDevIT />
-          </div> */}
+          </div>
 
           {close}
         </article>
