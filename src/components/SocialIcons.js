@@ -18,85 +18,85 @@ import React from 'react'
 export default class SocialIcons extends React.Component {
   render() {
     return (
-      <ul className='icons'>
+      <ul className="icons">
         {/* LinkTree Icon */}
         <li>
           <a
-            aria-label='LinkTree'
-            href='https://linktr.ee/ashwig'
-            target='_blank'
-            rel='noreferrer'
-            className='icon fa-link'
+            aria-label="LinkTree"
+            href="https://linktr.ee/ashwig"
+            target="_blank"
+            rel="noreferrer"
+            className="icon fa-link"
           ></a>
         </li>
         {/* Twitch Icon */}
         <li>
           <a
-            aria-label='Twitch'
-            href='https://twitch.tv/ashhellwig'
-            target='_blank'
-            rel='noreferrer'
-            className='icon fa-twitch'
+            aria-label="Twitch"
+            href="https://twitch.tv/ashhellwig"
+            target="_blank"
+            rel="noreferrer"
+            className="icon fa-twitch"
           ></a>
         </li>
         {/* YouTube Icon */}
         <li>
           <a
-            aria-label='YouTube'
-            href='https://youtube.com/@ashhellwig'
-            target='_blank'
-            rel='noreferrer'
-            className='icon fa-youtube'
+            aria-label="YouTube"
+            href="https://youtube.com/@ashhellwig"
+            target="_blank"
+            rel="noreferrer"
+            className="icon fa-youtube"
           ></a>
         </li>
         {/* Instagram Icon */}
         <li>
           <a
-            aria-label='Instagram'
-            href='https://instagram.com/toyotatrapstar'
-            target='_blank'
-            rel='noreferrer'
-            className='icon fa-instagram'
+            aria-label="Instagram"
+            href="https://instagram.com/toyotatrapstar"
+            target="_blank"
+            rel="noreferrer"
+            className="icon fa-instagram"
           ></a>
         </li>
         {/* Twitter Icon */}
         <li>
           <a
-            aria-label='X/Twitter'
-            href='https://twitter.com/hellwigashton'
-            target='_blank'
-            rel='noreferrer'
-            className='icon fa-twitter'
+            aria-label="X/Twitter"
+            href="https://twitter.com/hellwigashton"
+            target="_blank"
+            rel="noreferrer"
+            className="icon fa-twitter"
           ></a>
         </li>
         {/* Facebook Icon */}
         <li>
           <a
-            aria-label='Facebook'
-            href='https://facebook.com/AshtonATL'
-            target='_blank'
-            rel='noreferrer'
-            className='icon fa-facebook'
+            aria-label="Facebook"
+            href="https://facebook.com/AshtonATL"
+            target="_blank"
+            rel="noreferrer"
+            className="icon fa-facebook"
           ></a>
         </li>
         {/* GitHub Icon */}
         <li>
           <a
-            aria-label='GitHub'
-            href='https://github.com/ashellwig/ashhellwig-gatsby.git'
-            target='_blank'
-            rel='noreferrer'
-            className='icon fa-github'
+            aria-label="GitHub"
+            href="https://github.com/ashellwig/ashhellwig-gatsby.git"
+            target="_blank"
+            rel="noreferrer"
+            className="icon fa-github"
           ></a>
         </li>
         {/* LinkedIn Icon */}
         <li>
           <a
-            aria-label='LinkedIn'
-            href='https://www.linkedin.com/in/ahellwig/'
-            target='_blank'
-            rel='noreferrer'
-            className='icon fa-linkedin'
+            aria-label="LinkedIn"
+            href="https://www.linkedin.com/in/ahellwig/"
+            target="_blank"
+            rel="noreferrer"
+            className="icon fa-linkedin"
           ></a>
         </li>
       </ul>

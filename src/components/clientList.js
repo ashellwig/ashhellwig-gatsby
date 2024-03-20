@@ -12,14 +12,14 @@
 //
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import React from 'react'
 import clientIgadi from '../images/clientLogos/client-igadi.png'
 import clientWolfpac from '../images/clientLogos/client-wolfpac.png'
 import clientTheClear from '../images/clientLogos/client-theclear.png'
 import clientLilPinksPastries from '../images/clientLogos/client-lilpinkspastries.png'
 import clientHotDishHoney from '../images/clientLogos/client-hotdishhoney.png'
-// import clientAmericanExpress from '../images/clientLogos/client-americanexpress.png'
-// import clientTakkion from '../images/clientLogos/client-takkion.png'
+
 import '../assets/css/client-list.css'
 
 const ClientList = () => (

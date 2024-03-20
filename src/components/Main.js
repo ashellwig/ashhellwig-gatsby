@@ -3,16 +3,18 @@ import React from 'react'
 import { withBreakpoints } from 'react-breakpoints'
 
 import imageTrinityBitework from '../images/trinitybitework.jpg'
+import imageHalloween from '../images/Halloween.png'
 import holdingIchigo from '../images/holdingichigo.jpg'
 import marchOnCapitalHill from '../images/video/March-Capital-Hill.mp4'
 import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
 import marchWaiting from '../images/video/march-waiting.mp4'
 
-import ClientList from './clientList'
 import ResumeDevIT from './ResumeDevIT'
+import ClientList from './ClientList'
 import ClientListMobile from './ClientListMobile'
 import ContactForm from './ContactForm'
 import SocialIcons from './SocialIcons'
+import CopyrightText from './CopyrightText'
 
 class Main extends React.Component {
   constructor(props) {
@@ -46,7 +48,7 @@ class Main extends React.Component {
     let close = (
       /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
       <div
-        className='close'
+        className="close"
         onClick={() => {
           this.props.onCloseArticle()
         }}
@@ -59,19 +61,19 @@ class Main extends React.Component {
     return (
       <div
         ref={this.props.setWrapperRef}
-        id='main'
+        id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id='intro'
+          id="intro"
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className='major'>Intro</h2>
-          <span className='image main'>
-            <img src={holdingIchigo} alt='' />
+          <h2 className="major">Intro</h2>
+          <span className="image main">
+            <img src={holdingIchigo} alt="" />
           </span>
           <p>
             Colorado-based BigData Data Engineer and experienced Python
@@ -79,31 +81,38 @@ class Main extends React.Component {
             technology, oil &amp; gas, and medical technology.
           </p>
           <p>
-            Experienced TeraData, Hive, and Python developer. In
-            this industry, my main focus is on the&nbsp; &quot;
+            Experienced TeraData, Hive, and Python developer. In this industry,
+            my main focus is on the&nbsp; &quot;
             <i>backend and systems-side</i>&quot;&nbsp; of development. Please
             see myresume under&nbsp;
             <i>experience</i> for more information.
           </p>
           <p>
-            Outside of working in technology, I train dogs for
-            protection and off-leash obedience at Mountain Canine College in
-            Evergreen, CO.
+            Outside of working in technology, I train dogs for protection and
+            off-leash obedience at Mountain Canine College in Evergreen, CO.
           </p>
           {close}
-          <div>
+          <hr />
+          <div
+            style={{
+              display: 'grid',
+              justifyContent: 'center',
+              alignContent: 'center'
+            }}
+          >
             <SocialIcons />
+            <CopyrightText />
           </div>
         </article>
 
         <article
-          id='experience'
+          id="experience"
           className={`${this.props.article === 'experience' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className='major'>experience</h2>
+          <h2 className="major">experience</h2>
 
           <div>
             <h3>Consulting and Development Clients</h3>
@@ -120,69 +129,102 @@ class Main extends React.Component {
             </div>
           </div>
 
-          <div style={{justifyContent: 'center'}}>
+          <div
+            style={{
+              justifyContent: 'center'
+            }}
+          >
             <h3>Resume</h3>
             <ResumeDevIT />
           </div>
-          <div>
-          <SocialIcons />
+          <hr />
+          <div
+            style={{
+              display: 'grid',
+              justifyContent: 'center',
+              alignContent: 'center'
+            }}
+          >
+            <SocialIcons />
+            <CopyrightText />
           </div>
           {close}
         </article>
 
         <article
-          id='media'
+          id="media"
           className={`${this.props.article === 'media' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className='major'>media</h2>
-          <span className='image main'>
+          <h2 className="major">media</h2>
+          <span className="image main">
             {/* Image: Training Trinity */}
-            <img src={imageTrinityBitework} alt='' />
+            <img src={imageTrinityBitework} alt="" />
+            <br></br>
+            {/* Image: Halloween costume 2023 */}
+            <img src={imageHalloween} alt="" />
             <br></br>
             {/* Video: March Waiting */}
             <video
               muted
-              width='200px'
+              width="200px"
               controls
               style={{ justifyContent: 'center' }}
             >
-              <source src={marchWaiting} type='video/mp4' />
+              <source src={marchWaiting} type="video/mp4" />
             </video>
             <br></br>
             {/* Video: March on Capital Hill */}
             <video muted controls>
-              <source src={marchOnCapitalHill} type='video/mp4' />
+              <source src={marchOnCapitalHill} type="video/mp4" />
             </video>
             <br></br>
             {/* Video: March on Union Station */}
             <video
               muted
-              width='200x'
+              width="200x"
               controls
               style={{ justifyContent: 'center' }}
             >
-              <source src={marchOnUnionStation} type='video/mp4' />
+              <source src={marchOnUnionStation} type="video/mp4" />
             </video>
           </span>
-          <div>
+          <hr />
+          <div
+            style={{
+              display: 'grid',
+              justifyContent: 'center',
+              alignContent: 'center'
+            }}
+          >
             <SocialIcons />
+            <CopyrightText />
           </div>
           {close}
         </article>
 
         <article
-          id='contact'
+          id="contact"
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className='major'>Contact</h2>
+          <h2 className="major">Contact</h2>
           <ContactForm />
-          <SocialIcons />
+          <hr />
+          <div
+            style={{
+              display: 'grid',
+              justifyContent: 'center',
+              alignContent: 'center'
+            }}
+          >
+            <SocialIcons />
+            <CopyrightText />
+          </div>
           {close}
         </article>
       </div>

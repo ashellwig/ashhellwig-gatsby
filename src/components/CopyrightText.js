@@ -14,21 +14,27 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import React from 'react'
-import PropTypes from 'prop-types'
-import SocialIcons from './SocialIcons'
-import CopyrightText from './CopyrightText'
 
-const Footer = props => (
-  <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
-    <div>
-      <SocialIcons />
-      <CopyrightText />
-    </div>
-  </footer>
-)
-
-Footer.propTypes = {
-  timeout: PropTypes.bool
+export default class Copyright extends React.Component {
+  render() {
+    return (
+      <div className="copyright">
+        <p className="copyrightText">
+          Copyright &copy; 2021-2024 Ash Hellwig. All rights reserved.
+          <br></br>
+          Made with&nbsp;
+          <a
+            aria-label="Heart"
+            href="https://github.com/ashellwig/ashhellwig-gatsby"
+            target="_blank"
+            rel="noreferrer"
+            className="icon fa-heart-o"
+          ></a>
+          &nbsp;using&nbsp;
+          <a href="https://html5up.net">HTML5UP</a> and&nbsp;
+          <a href="https://www.gatsbyjs.org/">Gatsby.js</a>.
+        </p>
+      </div>
+    )
+  }
 }
-
-export default Footer
