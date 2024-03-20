@@ -176,40 +176,75 @@ class Main extends React.Component {
           <ul className='icons'>
             <li>
               <a
+                aria-label='X/Twitter'
                 href='https://twitter.com/hellwigashton'
                 target='_blank'
-                rel=''
+                rel='noreferrer'
                 className='icon fa-twitter'
-              >
-                <span className='label'>Twitter</span>
-              </a>
+              ></a>
             </li>
             <li>
               <a
+                aria-label='Facebook'
                 href='https://facebook.com/AshtonATL'
                 target='_blank'
+                rel='noreferrer'
                 className='icon fa-facebook'
-              >
-                <span className='label'>Facebook</span>
-              </a>
+              ></a>
             </li>
             <li>
               <a
+                aria-label='Instagram'
                 href='https://instagram.com/toyotatrapstar'
                 target='_blank'
+                rel='noreferrer'
                 className='icon fa-instagram'
-              >
-                <span className='label'>Instagram</span>
-              </a>
+              ></a>
             </li>
             <li>
               <a
+                aria-label='GitHub'
                 href='https://github.com/ashellwig/ashhellwig-gatsby.git'
                 target='_blank'
+                rel='noreferrer'
                 className='icon fa-github'
-              >
-                <span className='label'>GitHub</span>
-              </a>
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label='Twitch'
+                href='https://twitch.tv/ashhellwig'
+                target='_blank'
+                rel='noreferrer'
+                className='icon fa-twitch'
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label='LinkTree'
+                href='https://linktr.ee/ashwig'
+                target='_blank'
+                rel='noreferrer'
+                className='icon fa-link'
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label='YouTube'
+                href='https://youtube.com/@ashhellwig'
+                target='_blank'
+                rel='noreferrer'
+                className='icon fa-youtube'
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label='LinkedIn'
+                href='https://www.linkedin.com/in/ahellwig/'
+                target='_blank'
+                rel='noreferrer'
+                className='icon fa-linkedin'
+              ></a>
             </li>
           </ul>
           {close}
