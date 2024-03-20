@@ -13,7 +13,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import React from 'react'
+import React, { useState } from 'react'
 
 import '../assets/css/contact-form.css'
 
@@ -64,6 +64,16 @@ export default class ContactForm extends React.Component {
           </p>
           {/* END: Form Field: Last Name */}
 
+          {/* BEGIN: Form Field: Subject */}
+          <input
+            type="hidden"
+            name="subject"
+            data-remove-prefix
+            value="New contact form submission on ash.ashwigltd.com"
+            id="contact-form-field-subject"
+          />
+          {/* END: Form Field: Subject */}
+
           {/* BEGIN: Form Field: Contact Email */}
           <p>
             <label
@@ -79,6 +89,22 @@ export default class ContactForm extends React.Component {
             </label>
           </p>
           {/* END: Form Field: Contact Email */}
+
+          {/* BEGIN: Reason for Contact */}
+          <p>
+            <label
+              className="form-input-label"
+              htmlFor="contact-form-field-reason"
+            >
+              Reason for Contact
+              <input
+                type="text"
+                name="contact-form-field-reason"
+                id="contact-form-field-reason"
+              />
+            </label>
+          </p>
+          {/* END: Reason for Contact */}
 
           {/* BEGIN: Form Field: Message */}
           <p>
