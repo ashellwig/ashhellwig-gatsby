@@ -24,12 +24,12 @@ import marchOnCapitalHill from '../images/video/March-Capital-Hill.mp4'
 import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
 import marchWaiting from '../images/video/march-waiting.mp4'
 
-import ResumeDevIT from './ResumeDevIT'
-import ClientList from './ClientList'
-import ClientListMobile from './ClientListMobile'
-import ContactForm from './ContactForm'
-import SocialIcons from './SocialIcons'
-import CopyrightText from './CopyrightText'
+import ResumeDevIT from './ResumeDevIT.jsx'
+import ClientList from './ClientList.jsx'
+import ClientListMobile from './ClientListMobile.jsx'
+import ContactForm from './ContactForm.jsx'
+import SocialIcons from './SocialIcons.jsx'
+import CopyrightText from './CopyrightText.jsx'
 
 class Main extends React.Component {
   constructor(props) {

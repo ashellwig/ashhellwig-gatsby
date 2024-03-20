@@ -14,21 +14,13 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import React from 'react'
-import PropTypes from 'prop-types'
-import SocialIcons from './SocialIcons'
-import CopyrightText from './CopyrightText'
+import Layout from '../components/layout.jsx'
 
-const Footer = props => (
-  <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
-    <div>
-      <SocialIcons />
-      <CopyrightText />
-    </div>
-  </footer>
+const NotFoundPage = () => (
+  <Layout>
+    <h1>NOT FOUND</h1>
+    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  </Layout>
 )
 
-Footer.propTypes = {
-  timeout: PropTypes.bool
-}
-
-export default Footer
+export default NotFoundPage

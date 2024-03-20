@@ -14,6 +14,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import React from 'react'
+
 import clientIgadi from '../images/clientLogos/client-igadi.png'
 import clientWolfpac from '../images/clientLogos/client-wolfpac.png'
 import clientTheClear from '../images/clientLogos/client-theclear.png'

@@ -16,10 +16,10 @@
 import React from 'react'
 import ReactBreakpoints from 'react-breakpoints'
 
-import Layout from '../components/layout'
-import Header from '../components/Header'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+import Layout from '../components/layout.jsx'
+import Header from '../components/Header.jsx'
+import Main from '../components/Main.jsx'
+import Footer from '../components/Footer.jsx'
 
 const breakpoints = {
   mobile: 320,
