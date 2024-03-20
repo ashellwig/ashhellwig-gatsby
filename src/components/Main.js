@@ -45,7 +45,7 @@ class Main extends React.Component {
     let close = (
       /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
       <div
-        className="close"
+        className='close'
         onClick={() => {
           this.props.onCloseArticle()
         }}
@@ -58,19 +58,19 @@ class Main extends React.Component {
     return (
       <div
         ref={this.props.setWrapperRef}
-        id="main"
+        id='main'
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
+          id='intro'
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
-          <span className="image main">
-            <img src={holdingIchigo} alt="" />
+          <h2 className='major'>Intro</h2>
+          <span className='image main'>
+            <img src={holdingIchigo} alt='' />
           </span>
           <p>
             Colorado-based BigData Data Engineer and experienced Python
@@ -93,13 +93,13 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="experience"
+          id='experience'
           className={`${this.props.article === 'experience' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">experience</h2>
+          <h2 className='major'>experience</h2>
 
           <div>
             <h3>Consulting and Development Clients</h3>
@@ -125,85 +125,90 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="media"
+          id='media'
           className={`${this.props.article === 'media' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">media</h2>
-          <span className="image main">
+          <h2 className='major'>media</h2>
+          <span className='image main'>
             {/* Image: Training Trinity */}
-            <img src={imageTrinityBitework} alt="" />
+            <img src={imageTrinityBitework} alt='' />
             <br></br>
             {/* Video: March Waiting */}
             <video
               muted
-              width="200px"
+              width='200px'
               controls
               style={{ justifyContent: 'center' }}
             >
-              <source src={marchWaiting} type="video/mp4" />
+              <source src={marchWaiting} type='video/mp4' />
             </video>
             <br></br>
             {/* Video: March on Capital Hill */}
             <video muted controls>
-              <source src={marchOnCapitalHill} type="video/mp4" />
+              <source src={marchOnCapitalHill} type='video/mp4' />
             </video>
             <br></br>
             {/* Video: March on Union Station */}
             <video
               muted
-              width="200x"
+              width='200x'
               controls
               style={{ justifyContent: 'center' }}
             >
-              <source src={marchOnUnionStation} type="video/mp4" />
+              <source src={marchOnUnionStation} type='video/mp4' />
             </video>
           </span>
           {close}
         </article>
 
         <article
-          id="contact"
+          id='contact'
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
+          <h2 className='major'>Contact</h2>
           <ContactForm />
-          <ul className="icons">
+          <ul className='icons'>
             <li>
               <a
-                href="https://twitter.com/hellwigashton"
-                className="icon fa-twitter"
+                href='https://twitter.com/hellwigashton'
+                target='_blank'
+                rel=''
+                className='icon fa-twitter'
               >
-                <span className="label">Twitter</span>
+                <span className='label'>Twitter</span>
               </a>
             </li>
             <li>
               <a
-                href="https://facebook.com/AshtonATL"
-                className="icon fa-facebook"
+                href='https://facebook.com/AshtonATL'
+                target='_blank'
+                className='icon fa-facebook'
               >
-                <span className="label">Facebook</span>
+                <span className='label'>Facebook</span>
               </a>
             </li>
             <li>
               <a
-                href="https://instagram.com/ashhellwig"
-                className="icon fa-instagram"
+                href='https://instagram.com/toyotatrapstar'
+                target='_blank'
+                className='icon fa-instagram'
               >
-                <span className="label">Instagram</span>
+                <span className='label'>Instagram</span>
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/ashellwig/ashhellwig-gatsby.git"
-                className="icon fa-github"
+                href='https://github.com/ashellwig/ashhellwig-gatsby.git'
+                target='_blank'
+                className='icon fa-github'
               >
-                <span className="label">GitHub</span>
+                <span className='label'>GitHub</span>
               </a>
             </li>
           </ul>
