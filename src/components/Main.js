@@ -12,6 +12,7 @@ import ClientList from './clientList'
 import ResumeDevIT from './ResumeDevIT'
 import ClientListMobile from './ClientListMobile'
 import ContactForm from './ContactForm'
+import SocialIcons from './SocialIcons'
 
 class Main extends React.Component {
   constructor(props) {
@@ -90,6 +91,9 @@ class Main extends React.Component {
             Evergreen, CO.
           </p>
           {close}
+          <div>
+            <SocialIcons />
+          </div>
         </article>
 
         <article
@@ -120,7 +124,9 @@ class Main extends React.Component {
             <h3>Resume</h3>
             <ResumeDevIT />
           </div>
-
+          <div>
+          <SocialIcons />
+          </div>
           {close}
         </article>
 
@@ -161,6 +167,9 @@ class Main extends React.Component {
               <source src={marchOnUnionStation} type='video/mp4' />
             </video>
           </span>
+          <div>
+            <SocialIcons />
+          </div>
           {close}
         </article>
 
@@ -173,80 +182,7 @@ class Main extends React.Component {
         >
           <h2 className='major'>Contact</h2>
           <ContactForm />
-          <ul className='icons'>
-            <li>
-              <a
-                aria-label='X/Twitter'
-                href='https://twitter.com/hellwigashton'
-                target='_blank'
-                rel='noreferrer'
-                className='icon fa-twitter'
-              ></a>
-            </li>
-            <li>
-              <a
-                aria-label='Facebook'
-                href='https://facebook.com/AshtonATL'
-                target='_blank'
-                rel='noreferrer'
-                className='icon fa-facebook'
-              ></a>
-            </li>
-            <li>
-              <a
-                aria-label='Instagram'
-                href='https://instagram.com/toyotatrapstar'
-                target='_blank'
-                rel='noreferrer'
-                className='icon fa-instagram'
-              ></a>
-            </li>
-            <li>
-              <a
-                aria-label='GitHub'
-                href='https://github.com/ashellwig/ashhellwig-gatsby.git'
-                target='_blank'
-                rel='noreferrer'
-                className='icon fa-github'
-              ></a>
-            </li>
-            <li>
-              <a
-                aria-label='Twitch'
-                href='https://twitch.tv/ashhellwig'
-                target='_blank'
-                rel='noreferrer'
-                className='icon fa-twitch'
-              ></a>
-            </li>
-            <li>
-              <a
-                aria-label='LinkTree'
-                href='https://linktr.ee/ashwig'
-                target='_blank'
-                rel='noreferrer'
-                className='icon fa-link'
-              ></a>
-            </li>
-            <li>
-              <a
-                aria-label='YouTube'
-                href='https://youtube.com/@ashhellwig'
-                target='_blank'
-                rel='noreferrer'
-                className='icon fa-youtube'
-              ></a>
-            </li>
-            <li>
-              <a
-                aria-label='LinkedIn'
-                href='https://www.linkedin.com/in/ahellwig/'
-                target='_blank'
-                rel='noreferrer'
-                className='icon fa-linkedin'
-              ></a>
-            </li>
-          </ul>
+          <SocialIcons />
           {close}
         </article>
       </div>
