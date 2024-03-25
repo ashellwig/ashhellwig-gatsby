@@ -17,12 +17,11 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { withBreakpoints } from 'react-breakpoints'
 
-import imageTrinityBitework from '../images/trinitybitework.jpg'
-import imageHalloween from '../images/Halloween.png'
+// Main Images
 import holdingIchigo from '../images/holdingichigo.jpg'
-import marchOnCapitalHill from '../images/video/March-Capital-Hill.mp4'
-import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
-import marchWaiting from '../images/video/march-waiting.mp4'
+
+// Images for Media Article
+import ImgJustMe from './img/ImgJustMe.jsx'
 
 import ResumeDevIT from './ResumeDevIT.jsx'
 import devITResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_Cloud.pdf'
@@ -167,38 +166,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">media</h2>
-          <span className="image main">
-            {/* Image: Training Trinity */}
-            <img src={imageTrinityBitework} alt="" />
-            <br></br>
-            {/* Image: Halloween costume 2023 */}
-            <img src={imageHalloween} alt="" />
-            <br></br>
-            {/* Video: March Waiting */}
-            <video
-              muted
-              width="200px"
-              controls
-              style={{ justifyContent: 'center' }}
-            >
-              <source src={marchWaiting} type="video/mp4" />
-            </video>
-            <br></br>
-            {/* Video: March on Capital Hill */}
-            <video muted controls>
-              <source src={marchOnCapitalHill} type="video/mp4" />
-            </video>
-            <br></br>
-            {/* Video: March on Union Station */}
-            <video
-              muted
-              width="200x"
-              controls
-              style={{ justifyContent: 'center' }}
-            >
-              <source src={marchOnUnionStation} type="video/mp4" />
-            </video>
-          </span>
+          <ImgJustMe />
           <ArticleFooter />
           {close}
         </article>
