@@ -25,6 +25,7 @@ import marchOnUnionStation from '../images/video/March-Union-Station.mp4'
 import marchWaiting from '../images/video/march-waiting.mp4'
 
 import ResumeDevIT from './ResumeDevIT.jsx'
+import devITResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_Cloud.pdf'
 import ClientList from './ClientList.jsx'
 import ClientListMobile from './ClientListMobile.jsx'
 import ContactForm from './ContactForm.jsx'
@@ -132,14 +133,27 @@ class Main extends React.Component {
               )}
             </div>
           </div>
-
+          <h3>Resume</h3>
+          <div>
+            <ResumeDevIT />
+          </div>
           <div
             style={{
-              justifyContent: 'center'
+              display: 'flex',
+              justifyContent: 'center',
+              alignContent: 'center',
+              alignItems: 'center'
             }}
           >
-            <h3>Resume</h3>
-            <ResumeDevIT />
+            <div>
+              <a
+                style={{ textDecoration: 'none' }}
+                href={devITResumeFile}
+                download="Ashton-S-Hellwig-Resume.pdf"
+              >
+                <button>Download Resume</button>
+              </a>
+            </div>
           </div>
           <ArticleFooter />
           {close}
