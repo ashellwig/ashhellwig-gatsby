@@ -1,0 +1,18 @@
+.copyright {
+  display: grid;
+  column-gap: 12pt;
+}
+
+.copyrightCopyright {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.copyrightAttribution {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}

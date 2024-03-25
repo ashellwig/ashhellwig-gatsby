@@ -15,26 +15,25 @@
 
 import React from 'react'
 
-export default class Copyright extends React.Component {
+import Copyright from './Copyright.jsx'
+import SocialIcons from './SocialIcons.jsx'
+
+export default class ArticleFooter extends React.Component {
   render() {
     return (
-      <div className="copyright">
-        <p className="copyrightText">
-          Copyright &copy; 2021-2024 Ash Hellwig. All rights reserved.
-          <br></br>
-          Made with&nbsp;
-          <a
-            aria-label="Heart"
-            href="https://github.com/ashellwig/ashhellwig-gatsby"
-            target="_blank"
-            rel="noreferrer"
-            className="icon fa-heart-o"
-          ></a>
-          &nbsp;using&nbsp;
-          <a href="https://html5up.net">HTML5UP</a> and&nbsp;
-          <a href="https://www.gatsbyjs.org/">Gatsby.js</a>.
-        </p>
-      </div>
+      <React.Fragment>
+        <hr />
+        <div
+          style={{
+            display: 'grid',
+            justifyContent: 'center',
+            alignContent: 'center'
+          }}
+        >
+          <SocialIcons />
+          <Copyright />
+        </div>
+      </React.Fragment>
     )
   }
 }

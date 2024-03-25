@@ -28,8 +28,7 @@ import ResumeDevIT from './ResumeDevIT.jsx'
 import ClientList from './ClientList.jsx'
 import ClientListMobile from './ClientListMobile.jsx'
 import ContactForm from './ContactForm.jsx'
-import SocialIcons from './SocialIcons.jsx'
-import CopyrightText from './CopyrightText.jsx'
+import ArticleFooter from './ArticleFooter.jsx'
 
 class Main extends React.Component {
   constructor(props) {
@@ -106,18 +105,8 @@ class Main extends React.Component {
             Outside of working in technology, I train dogs for protection and
             off-leash obedience at Mountain Canine College in Evergreen, CO.
           </p>
+          <ArticleFooter />
           {close}
-          <hr />
-          <div
-            style={{
-              display: 'grid',
-              justifyContent: 'center',
-              alignContent: 'center'
-            }}
-          >
-            <SocialIcons />
-            <CopyrightText />
-          </div>
         </article>
 
         <article
@@ -152,17 +141,7 @@ class Main extends React.Component {
             <h3>Resume</h3>
             <ResumeDevIT />
           </div>
-          <hr />
-          <div
-            style={{
-              display: 'grid',
-              justifyContent: 'center',
-              alignContent: 'center'
-            }}
-          >
-            <SocialIcons />
-            <CopyrightText />
-          </div>
+          <ArticleFooter />
           {close}
         </article>
 
@@ -206,17 +185,7 @@ class Main extends React.Component {
               <source src={marchOnUnionStation} type="video/mp4" />
             </video>
           </span>
-          <hr />
-          <div
-            style={{
-              display: 'grid',
-              justifyContent: 'center',
-              alignContent: 'center'
-            }}
-          >
-            <SocialIcons />
-            <CopyrightText />
-          </div>
+          <ArticleFooter />
           {close}
         </article>
 
@@ -229,17 +198,7 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact</h2>
           <ContactForm />
-          <hr />
-          <div
-            style={{
-              display: 'grid',
-              justifyContent: 'center',
-              alignContent: 'center'
-            }}
-          >
-            <SocialIcons />
-            <CopyrightText />
-          </div>
+          <ArticleFooter />
           {close}
         </article>
       </div>

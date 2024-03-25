@@ -16,13 +16,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SocialIcons from './SocialIcons.jsx'
-import CopyrightText from './CopyrightText.jsx'
+import Copyright from './Copyright.jsx'
 
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
     <div>
       <SocialIcons />
-      <CopyrightText />
+      <Copyright />
     </div>
   </footer>
 )
