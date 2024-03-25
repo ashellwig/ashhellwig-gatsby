@@ -22,65 +22,28 @@ import 'react-multi-carousel/lib/styles.css'
 
 // Images
 import biggie from '../../images/justme/biggie.jpg'
+import biggieThumb from '../../images/justme/biggie-thumb.jpg'
 import blondeAndPink from '../../images/justme/blonde-and-pink.jpg'
+import blondeAndPinkThumb from '../../images/justme/blonde-and-pink-thumb.jpg'
 import f21Candid from '../../images/justme/f21-candid.jpg'
-
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
-}
+import f21CandidThumb from '../../images/justme/f21-candid-thumb.jpg'
 
 export default function ImgJustMe() {
   return (
     <React.Fragment>
-      <div>
-        <Carousel responsive={responsive}>
-          <div>
-            <img
-              style={{
-                width: '70%',
-                height: '70%'
-              }}
-              src={biggie}
-              alt="Biggie Memorial in NYC"
-            />
-          </div>
-          <div>
-            <img
-              style={{
-                width: '70%',
-                height: '70%'
-              }}
-              src={blondeAndPink}
-              alt="Blonde and Pink Hair-due"
-            />
-          </div>
-          <div>
-            <img
-              style={{
-                width: '70%',
-                height: '70%'
-              }}
-              src={f21Candid}
-              alt="Cherry Creek after buying Lily F21 Apparel"
-            />
-          </div>
-        </Carousel>
+      <div className="gallery style2">
+        <a href={biggie} className="image">
+          <img src={biggieThumb} alt="Biggie Memorial" />
+        </a>
+        <div className="caption">Biggie Memorial in NYC</div>
+        <a href={blondeAndPink} className="image">
+          <img src={blondeAndPinkThumb} alt="Blonde and pink hairdue" />
+          <div className="caption">Blonde and pink hairdue</div>
+        </a>
+        <a href={f21Candid} className="image">
+          <img src={f21CandidThumb} alt="Cherry Creek Mall with Lily" />
+          <div className="caption">Cherry Creek Mall with Lily</div>
+        </a>
       </div>
     </React.Fragment>
   )

@@ -13,13 +13,24 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+// React
 import React from 'react'
 import ReactBreakpoints from 'react-breakpoints'
 
+// Components, Pages, and Layout
 import Layout from '../components/layout.jsx'
 import Header from '../components/Header.jsx'
 import Main from '../components/Main.jsx'
 import Footer from '../components/Footer.jsx'
+
+// Material
+//// Font
+import '@fontsource/roboto/300.css'
+import '@fontsource/roboto/400.css'
+import '@fontsource/roboto/500.css'
+import '@fontsource/roboto/700.css'
+//// Icons
+import '@mui/icons-material'
 
 const breakpoints = {
   mobile: 320,

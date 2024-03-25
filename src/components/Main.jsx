@@ -21,7 +21,8 @@ import { withBreakpoints } from 'react-breakpoints'
 import holdingIchigo from '../images/holdingichigo.jpg'
 
 // Images for Media Article
-import ImgJustMe from './img/ImgJustMe.jsx'
+// import ImgJustMe from './img/ImgJustMe.jsx'
+import MediaArticle from './MediaArticle.jsx'
 
 import ResumeDevIT from './ResumeDevIT.jsx'
 import devITResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_Cloud.pdf'
@@ -166,7 +167,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">media</h2>
-          <ImgJustMe />
+          <MediaArticle />
           <ArticleFooter />
           {close}
         </article>
