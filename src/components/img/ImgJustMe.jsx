@@ -15,11 +15,6 @@
 
 import React from 'react'
 
-// Carousel Component
-import Carousel from 'react-multi-carousel'
-// Carousel Component Style
-import 'react-multi-carousel/lib/styles.css'
-
 // Images
 import biggie from '../../images/justme/biggie.jpg'
 import biggieThumb from '../../images/justme/biggie-thumb.jpg'
