@@ -46,21 +46,6 @@ export default function MediaArticle() {
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <a className="icon">
-            <FontAwesomeIcon icon={faUser} />
-          </a>
-          &nbsp;&nbsp;Photos of Me
-        </AccordionSummary>
-        <AccordionDetails>
-          <ImgJustMe />
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
           id="panel3-header"
         >
@@ -98,6 +83,21 @@ export default function MediaArticle() {
             </AccordionSummary>
             <AccordionDetails>Under construction.</AccordionDetails>
           </Accordion>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1-content"
+          id="panel1-header"
+        >
+          <a className="icon">
+            <FontAwesomeIcon icon={faUser} />
+          </a>
+          &nbsp;&nbsp;Photos of Me
+        </AccordionSummary>
+        <AccordionDetails>
+          <ImgJustMe />
         </AccordionDetails>
       </Accordion>
       <Accordion>
