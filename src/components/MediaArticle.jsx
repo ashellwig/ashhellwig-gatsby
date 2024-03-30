@@ -37,6 +37,7 @@ import Button from '@mui/material/Button'
 
 // Media Component Sources
 import ImgDogTraining from './img/ImgDogTraining'
+import VidDogTraining from './video/VidDogTraining'
 import ImgJustMe from './img/ImgJustMe'
 import ImgWithLily from './img/ImgWithLily'
 
@@ -81,7 +82,9 @@ export default function MediaArticle() {
               </a>
               &nbsp;&nbsp;Video
             </AccordionSummary>
-            <AccordionDetails>Under construction.</AccordionDetails>
+            <AccordionDetails>
+              <VidDogTraining />
+            </AccordionDetails>
           </Accordion>
         </AccordionDetails>
       </Accordion>
