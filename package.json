@@ -42,6 +42,7 @@
     "react-helmet": "^5.2.1",
     "react-multi-carousel": "^2.8.4",
     "react-pdf": "^5.1.0",
+    "react-player": "^2.15.1",
     "react-tabbordion": "^1.0.6"
   },
   "devDependencies": {

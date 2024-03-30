@@ -14,9 +14,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import React from 'react'
-
-// Videos
-// Placeholder.
+import ReactPlayer from 'react-player/youtube'
 
 import '../../assets/css/VidDogTraining.css'
 
@@ -24,7 +22,45 @@ export default function VidDogTraining() {
   return (
     <React.Fragment>
       <div className="gallery style2">
-        <p>Under construction.</p>
+        <div>
+          <ReactPlayer
+            width="100%"
+            url="https://youtu.be/zVDMYpvE3q4"
+            width="450px"
+          />
+        </div>
+        <br></br>
+        <div>
+          <ReactPlayer
+            width="100%"
+            url="https://youtu.be/U3jvhBOj1e4?si=1qkOE5wZhuFyJ0p0"
+            width="450px"
+          />
+        </div>
+        <br></br>
+        <div>
+          <ReactPlayer
+            width="100%"
+            url="https://youtu.be/_YdEe9wGUvI?si=6nE2bSGet6fp1dLv"
+            width="450px"
+          />
+        </div>
+        <br></br>
+        <div>
+          <ReactPlayer
+            width="100%"
+            url="https://youtu.be/QSuueUed9Qs?si=YQMTVMSDYh2uI5Qp"
+            width="450px"
+          />
+        </div>
+        <br></br>
+        <div>
+          <ReactPlayer
+            width="100%"
+            url="https://youtu.be/wUp1EzF1dp0?si=7YJgwlL-z3UpPxYd"
+            width="450px"
+          />
+        </div>
       </div>
     </React.Fragment>
   )
