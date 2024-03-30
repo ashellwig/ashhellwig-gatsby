@@ -19,7 +19,7 @@ import React from 'react'
 import kojackFaceBite from '../../images/dogtraining/Kojack_Face-Bite.jpg'
 import kojackFaceBiteThumb from '../../images/dogtraining/Kojack_Face-Bite-thumb.jpg'
 import kojackWrongArm from '../../images/dogtraining/kojack_Wrong-Arm.jpg'
-import kojackWrongArmThumb from '../../images/dogtraining/kojack_Wrong-Arm-thumb.jpg'
+import kojackWrongArmThumb from '../../images/dogtraining/Kojack_Wrong-Arm-thumb.jpg'
 import trinitySleeve from '../../images/dogtraining/trinity_sleeve.jpg'
 import trinitySleeveThumb from '../../images/dogtraining/trinity_sleeve-thumb.jpg'
 
