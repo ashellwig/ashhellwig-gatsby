@@ -13,15 +13,31 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import ImgJustMe from './img/ImgJustMe'
-
+// Obligatory
 import * as React from 'react'
+
+// FontAwesome
+// import from './icons/DogIcon.jsx'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faDog,
+  faHeart,
+  faImage,
+  faUser,
+  faVideo
+} from '@fortawesome/free-solid-svg-icons'
+
+// Material UI Components
 import Accordion from '@mui/material/Accordion'
 import AccordionActions from '@mui/material/AccordionActions'
 import AccordionSummary from '@mui/material/AccordionSummary'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Button from '@mui/material/Button'
+
+// Media Component Sources
+import ImgDogTraining from './img/ImgDogTraining'
+import ImgJustMe from './img/ImgJustMe'
 import ImgWithLily from './img/ImgWithLily'
 
 export default function MediaArticle() {
@@ -33,7 +49,10 @@ export default function MediaArticle() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          Photos of Me
+          <a className="icon">
+            <FontAwesomeIcon icon={faUser} />
+          </a>
+          &nbsp;&nbsp;Photos of Me
         </AccordionSummary>
         <AccordionDetails>
           <ImgJustMe />
@@ -42,26 +61,59 @@ export default function MediaArticle() {
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2-content"
-          id="panel2-header"
+          aria-controls="panel3-content"
+          id="panel3-header"
         >
-          <a className="icon fa-heart-o"></a>
-          &nbsp;Photos of Me and my Love&nbsp;
-          <a className="icon fa-heart-o"></a>
+          <a className="icon">
+            <FontAwesomeIcon icon={faDog} />
+          </a>
+          &nbsp;&nbsp;Dog Training
         </AccordionSummary>
         <AccordionDetails>
-          <ImgWithLily />
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel4-content"
+              id="panel4-header"
+            >
+              <a className="icon">
+                <FontAwesomeIcon icon={faImage} />
+              </a>
+              &nbsp;&nbsp;Images
+            </AccordionSummary>
+            <AccordionDetails>
+              <ImgDogTraining />
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel4-content"
+              id="panel4-header"
+            >
+              <a className="icon">
+                <FontAwesomeIcon icon={faVideo} />
+              </a>
+              &nbsp;&nbsp;Video
+            </AccordionSummary>
+            <AccordionDetails>Under construction.</AccordionDetails>
+          </Accordion>
         </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3-content"
-          id="panel3-header"
+          aria-controls="panel2-content"
+          id="panel2-header"
         >
-          Dog Training
+          <a className="icon">
+            <FontAwesomeIcon icon={faHeart} />
+          </a>
+          &nbsp;&nbsp;Photos of Me and my Love
         </AccordionSummary>
-        <AccordionDetails>Under Construction.</AccordionDetails>
+        <AccordionDetails>
+          <ImgWithLily />
+        </AccordionDetails>
       </Accordion>
     </div>
   )

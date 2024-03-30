@@ -22,6 +22,22 @@ import blondeAndPink from '../../images/justme/blonde-and-pink.jpg'
 import blondeAndPinkThumb from '../../images/justme/blonde-and-pink-thumb.jpg'
 import f21Candid from '../../images/justme/f21-candid.jpg'
 import f21CandidThumb from '../../images/justme/f21-candid-thumb.jpg'
+import gothyEdit from '../../images/justme/gothy-edit.jpg'
+import gothyEditThumb from '../../images/justme/gothy-edit-thumb.jpg'
+import kirby from '../../images/justme/kirby.jpg'
+import kirbyThumb from '../../images/justme/kirby-thumb.jpg'
+import lobster from '../../images/justme/lobster.jpg'
+import lobsterThumb from '../../images/justme/lobster-thumb.jpg'
+import mausoleumsusboy from '../../images/justme/mausoleum-susboy.jpg'
+import mausoleumsusboyThumb from '../../images/justme/mausoleum-susboy-thumb.jpg'
+import pipBridge from '../../images/justme/pip-bridge.jpg'
+import pipBridgeThumb from '../../images/justme/pip-bridge-thumb.jpg'
+import pussyPower from '../../images/justme/pussy-power.jpg'
+import pussyPowerThumb from '../../images/justme/pussy-power-thumb.jpg'
+import smileyBackground from '../../images/justme/smiley-background.jpg'
+import smileyBackgroundThumb from '../../images/justme/smiley-background-thumb.jpg'
+
+import '../../assets/css/ImgJustMe.css'
 
 export default function ImgJustMe() {
   return (
@@ -29,15 +45,31 @@ export default function ImgJustMe() {
       <div className="gallery style2">
         <a href={biggie} className="image">
           <img src={biggieThumb} alt="Biggie Memorial" />
+          <div className="caption">Biggie Memorial in NYC</div>
         </a>
-        <div className="caption">Biggie Memorial in NYC</div>
+        <br />
+        <br />
         <a href={blondeAndPink} className="image">
           <img src={blondeAndPinkThumb} alt="Blonde and pink hairdue" />
           <div className="caption">Blonde and pink hairdue</div>
         </a>
+        <br />
+        <br />
         <a href={f21Candid} className="image">
           <img src={f21CandidThumb} alt="Cherry Creek Mall with Lily" />
           <div className="caption">Cherry Creek Mall with Lily</div>
+        </a>
+        <br />
+        <br />
+        <a href={gothyEdit} className="image">
+          <img src={gothyEditThumb} alt="Edit done by Lily Thomas" />
+          <div className="caption">Edit done by Lily Thomas</div>
+        </a>
+        <br />
+        <br />
+        <a href={kirby} className="image">
+          <img src={kirbyThumb} alt="Clutching Kirby" />
+          <div className="caption">Clutching Kirby</div>
         </a>
       </div>
     </React.Fragment>
