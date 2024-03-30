@@ -99,6 +99,16 @@ export default class SocialIcons extends React.Component {
             className="icon fa-linkedin"
           ></a>
         </li>
+        {/* Tumblr Icon */}
+        <li>
+          <a
+            aria-label="Tumblr"
+            href="https://www.tumblr.com/toyotatrapstar"
+            target="_blank"
+            rel="noreferrer"
+            className="icon fa-tumblr"
+          ></a>
+        </li>
       </ul>
     )
   }
