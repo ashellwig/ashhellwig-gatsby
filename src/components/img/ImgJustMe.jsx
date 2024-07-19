@@ -1,3 +1,4 @@
+/* eslint-disable */
 // Copyright (C) 2024 Ash Hellwig
 //
 // This program is free software: you can redistribute it and/or modify

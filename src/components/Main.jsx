@@ -25,7 +25,7 @@ import holdingIchigo from '../images/holdingichigo.jpg'
 import MediaArticle from './MediaArticle.jsx'
 
 import ResumeDevIT from './ResumeDevIT.jsx'
-import devITResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume_Cloud.pdf'
+import devITResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume.pdf'
 import ClientList from './ClientList.jsx'
 import ClientListMobile from './ClientListMobile.jsx'
 import ContactForm from './ContactForm.jsx'
