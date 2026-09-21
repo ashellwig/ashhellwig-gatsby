@@ -2,7 +2,11 @@
   padding-left: 7pt;
 }
 
-img {
+/* Scoped to gallery thumbnails so the rule does not leak onto other images
+   (e.g. the intro photo). object-fit keeps them square without stretching. */
+.gallery.style2 .image img {
   height: 270px;
   width: 270px;
+  max-width: 100%;
+  object-fit: cover;
 }
