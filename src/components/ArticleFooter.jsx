@@ -25,9 +25,10 @@ export default class ArticleFooter extends React.Component {
         <hr />
         <div
           style={{
-            display: 'grid',
-            justifyContent: 'center',
-            alignContent: 'center'
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            width: '100%'
           }}
         >
           <SocialIcons />

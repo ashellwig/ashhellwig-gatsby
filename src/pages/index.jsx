@@ -15,7 +15,6 @@
 
 // React
 import React from 'react'
-import ReactBreakpoints from 'react-breakpoints'
 
 // Components, Pages, and Layout
 import Layout from '../components/layout.jsx'
@@ -31,16 +30,6 @@ import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 //// Icons
 import '@mui/icons-material'
-
-const breakpoints = {
-  mobile: 320,
-  mobileLandscape: 480,
-  tablet: 768,
-  tabletLandscape: 1024,
-  desktop: 1200,
-  desktopLarge: 1500,
-  desktopWide: 1920
-}
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -124,32 +113,30 @@ class IndexPage extends React.Component {
 
   render() {
     return (
-      <ReactBreakpoints breakpoints={breakpoints}>
-        <Layout location={this.props.location}>
-          <div
-            className={`body ${this.state.loading} ${
-              this.state.isArticleVisible ? 'is-article-visible' : ''
-            }`}
-          >
-            <div id="wrapper">
-              <Header
-                onOpenArticle={this.handleOpenArticle}
-                timeout={this.state.timeout}
-              />
-              <Main
-                isArticleVisible={this.state.isArticleVisible}
-                timeout={this.state.timeout}
-                articleTimeout={this.state.articleTimeout}
-                article={this.state.article}
-                onCloseArticle={this.handleCloseArticle}
-                setWrapperRef={this.setWrapperRef}
-              />
-              <Footer timeout={this.state.timeout} />
-            </div>
-            <div id="bg"></div>
+      <Layout location={this.props.location}>
+        <div
+          className={`body ${this.state.loading} ${
+            this.state.isArticleVisible ? 'is-article-visible' : ''
+          }`}
+        >
+          <div id="wrapper">
+            <Header
+              onOpenArticle={this.handleOpenArticle}
+              timeout={this.state.timeout}
+            />
+            <Main
+              isArticleVisible={this.state.isArticleVisible}
+              timeout={this.state.timeout}
+              articleTimeout={this.state.articleTimeout}
+              article={this.state.article}
+              onCloseArticle={this.handleCloseArticle}
+              setWrapperRef={this.setWrapperRef}
+            />
+            <Footer timeout={this.state.timeout} />
           </div>
-        </Layout>
-      </ReactBreakpoints>
+          <div id="bg"></div>
+        </div>
+      </Layout>
     )
   }
 }

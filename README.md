@@ -21,7 +21,7 @@ git clone git@github.com:ashellwig/ashhellwig-gatsby.git
 
 cd ashhellwig-gatsby
 
-nvm use # If Using NVM. Requires NodeJS <=14.19
+nvm use # If Using NVM. Requires NodeJS 22 LTS (see .nvmrc)
 
 docker build -t ashellwig/ashhellwig-gatsby .
 docker run \
@@ -38,7 +38,7 @@ git clone git@github.com:ashellwig/ashhellwig-gatsby.git
 
 cd ashhellwig-gatsby
 
-nvm use # If Using NVM. Requires NodeJS <=14.19
+nvm use # If Using NVM. Requires NodeJS 22 LTS (see .nvmrc)
 
 npm i
 
@@ -52,7 +52,7 @@ git clone git@github.com:ashellwig/ashhellwig-gatsby.git
 
 cd ashhellwig-gatsby
 
-nvm use # If Using NVM. Requires NodeJS <=14.19
+nvm use # If Using NVM. Requires NodeJS 22 LTS (see .nvmrc)
 
 npm i
 

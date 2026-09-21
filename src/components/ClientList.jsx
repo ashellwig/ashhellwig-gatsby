@@ -23,73 +23,58 @@ import clientHotDishHoney from '../images/clientLogos/client-hotdishhoney.png'
 
 import '../assets/css/client-list.css'
 
+// Each logo gets a relative "size" so visually heavier marks (wide, dark)
+// don't dominate the row. Widths are resolved in CSS against the container,
+// never in fixed pixels, so the row reflows at any viewport.
+const clients = [
+  {
+    name: 'Hot Dish Honey',
+    href: 'https://www.hotdishhoney.com',
+    src: clientHotDishHoney,
+    size: 'md'
+  },
+  {
+    name: "Lil Pink's Pastries",
+    href: 'https://lilpinkspastries.com',
+    src: clientLilPinksPastries,
+    size: 'sm'
+  },
+  {
+    name: 'The Clear',
+    href: 'https://clearcannabisinc.com/',
+    src: clientTheClear,
+    size: 'md'
+  },
+  {
+    name: 'Wolfpac',
+    href: 'https://www.wolfpaccannabis.com/',
+    src: clientWolfpac,
+    size: 'sm'
+  },
+  {
+    name: 'IgadI',
+    href: 'https://www.igadiltd.com/',
+    src: clientIgadi,
+    size: 'md'
+  }
+]
+
 const ClientList = () => (
-  <div className="grid">
-    {/* ---- Hot Dish Honey ---- */}
-    <div className="clientLinkHotDishHoney">
-      <a
-        className="client-link"
-        href="https://www.hotdishhoney.com"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          alt="Logo - Hot Dish Honey"
-          src={clientHotDishHoney}
-          width="200px"
-          style={{ justifyContent: 'center' }}
-        />
-      </a>
-    </div>
-    {/* ---- Lil Pink's Pastries ---- */}
-    <div className="clientLinkLilPinkPastries">
-      <a
-        className="client-link"
-        href="https://lilpinkspastries.com"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          alt="Logo - Lil Pink's Pastries"
-          src={clientLilPinksPastries}
-          width="150px"
-        />
-      </a>
-    </div>
-    {/* ---- The Clear ---- */}
-    <div className="clientLinkClearCannabis">
-      <a
-        className="client-link"
-        href="https://clearcannabisinc.com/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img alt="Logo - The Clear" src={clientTheClear} width="200px" />
-      </a>
-    </div>
-    {/* ---- Wolfpac Cannabis ---- */}
-    <div className="clientLinkWolfPacCannabis">
-      <a
-        className="client-link"
-        href="https://www.wolfpaccannabis.com/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img alt="Logo - Wolfpac" src={clientWolfpac} width="125px" />
-      </a>
-    </div>
-    {/* ---- IgadI ---- */}
-    <div className="clientLinkIgadI">
-      <a
-        className="client-link"
-        href="https://www.igadiltd.com/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img alt="Logo - IgadI" src={clientIgadi} width="200px" />
-      </a>
-    </div>
-  </div>
+  <ul className="client-list">
+    {clients.map(({ name, href, src, size }) => (
+      <li key={name} className={`client-list__item client-list__item--${size}`}>
+        <a
+          className="client-link"
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={name}
+        >
+          <img alt={`Logo - ${name}`} src={src} loading="lazy" />
+        </a>
+      </li>
+    ))}
+  </ul>
 )
 
 export default ClientList

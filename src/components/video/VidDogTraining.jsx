@@ -13,55 +13,34 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ReactPlayer from 'react-player/youtube'
 
 import '../../assets/css/VidDogTraining.css'
 
+const videos = [
+  'https://youtu.be/zVDMYpvE3q4',
+  'https://youtu.be/U3jvhBOj1e4?si=1qkOE5wZhuFyJ0p0',
+  'https://youtu.be/_YdEe9wGUvI?si=6nE2bSGet6fp1dLv',
+  'https://youtu.be/QSuueUed9Qs?si=YQMTVMSDYh2uI5Qp',
+  'https://youtu.be/wUp1EzF1dp0?si=7YJgwlL-z3UpPxYd'
+]
+
 export default function VidDogTraining() {
+  // react-player injects the iframe on the client only, which does not match
+  // the server-rendered markup. Mount the players after hydration instead.
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
   return (
-    <React.Fragment>
-      <div className="gallery style2">
-        <div>
-          <ReactPlayer
-            width="100%"
-            url="https://youtu.be/zVDMYpvE3q4"
-            width="450px" // eslint-disable-line
-          />
+    <div className="gallery style2 video-gallery">
+      {videos.map((url) => (
+        <div key={url} className="video-embed">
+          {mounted && (
+            <ReactPlayer url={url} width="100%" height="100%" controls />
+          )}
         </div>
-        <br></br>
-        <div>
-          <ReactPlayer
-            width="100%"
-            url="https://youtu.be/U3jvhBOj1e4?si=1qkOE5wZhuFyJ0p0"
-            width="450px" // eslint-disable-line
-          />
-        </div>
-        <br></br>
-        <div>
-          <ReactPlayer
-            width="100%"
-            url="https://youtu.be/_YdEe9wGUvI?si=6nE2bSGet6fp1dLv"
-            width="450px" // eslint-disable-line
-          />
-        </div>
-        <br></br>
-        <div>
-          <ReactPlayer
-            width="100%"
-            url="https://youtu.be/QSuueUed9Qs?si=YQMTVMSDYh2uI5Qp"
-            width="450px" // eslint-disable-line
-          />
-        </div>
-        <br></br>
-        <div>
-          <ReactPlayer
-            width="100%"
-            url="https://youtu.be/wUp1EzF1dp0?si=7YJgwlL-z3UpPxYd"
-            width="450px" // eslint-disable-line
-          />
-        </div>
-      </div>
-    </React.Fragment>
+      ))}
+    </div>
   )
 }

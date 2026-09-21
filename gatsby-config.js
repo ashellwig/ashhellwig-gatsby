@@ -35,11 +35,21 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
       options: {
         implementation: require('sass'),
+        // The HTML5 UP "Dimension" theme SCSS predates Dart Sass's module
+        // system. Silence those warnings rather than rewriting vendored
+        // theme code.
+        sassOptions: {
+          silenceDeprecations: [
+            'import',
+            'global-builtin',
+            'slash-div',
+            'color-functions',
+            'if-function',
+            'elseif',
+            'new-global',
+          ],
+        },
       },
     },
   ],
-  flags: {
-    DEV_SSR: false
-    ,
-  },
 }

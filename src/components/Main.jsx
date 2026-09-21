@@ -15,7 +15,6 @@
 
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withBreakpoints } from 'react-breakpoints'
 
 // Main Images
 import holdingIchigo from '../images/holdingichigo.jpg'
@@ -24,42 +23,28 @@ import holdingIchigo from '../images/holdingichigo.jpg'
 // import ImgJustMe from './img/ImgJustMe.jsx'
 import MediaArticle from './MediaArticle.jsx'
 
-import ResumeDevIT from './ResumeDevIT.jsx'
 import devITResumeFile from '../assets/pdf/Ashton_S_Hellwig_Resume.pdf'
 import ClientList from './ClientList.jsx'
-import ClientListMobile from './ClientListMobile.jsx'
 import ContactForm from './ContactForm.jsx'
 import ArticleFooter from './ArticleFooter.jsx'
+
+// react-pdf depends on browser globals (DOMMatrix, Path2D), so the viewer
+// is only loaded on the client and skipped during static HTML generation.
+const ResumeDevIT = React.lazy(() => import('./ResumeDevIT.jsx'))
 
 class Main extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      isNotMobile: false
-    }
-
-    this.updatePredicate = this.updatePredicate.bind(this)
+    // Rendered identically on server and first client pass, then the PDF
+    // viewer mounts after hydration so the markup never mismatches.
+    this.state = { mounted: false }
   }
 
   componentDidMount() {
-    this.updatePredicate()
-
-    window.addEventListener('resize', this.updatePredicate)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updatePredicate)
-  }
-
-  updatePredicate() {
-    // this.setState({ isNotMobile: window.innerWidth <= 1449 })
-    this.setState({ isNotMobile: window.innerWidth >= 800 })
+    this.setState({ mounted: true })
   }
 
   render() {
-    // const { breakpoints, currentBreakpoint } = this.props
-    const isNotMobile = this.state.isNotMobile
-
     let close = (
       /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
       <div
@@ -179,21 +164,15 @@ class Main extends React.Component {
 
           <div>
             <h3>Consulting and Development Clients</h3>
-            <div>
-              {isNotMobile ? (
-                <div>
-                  <ClientList />
-                </div>
-              ) : (
-                <div>
-                  <ClientListMobile />
-                </div>
-              )}
-            </div>
+            <ClientList />
           </div>
           <h3>Resume</h3>
           <div>
-            <ResumeDevIT />
+            {this.state.mounted && (
+              <React.Suspense fallback={<p>Loading resume&hellip;</p>}>
+                <ResumeDevIT />
+              </React.Suspense>
+            )}
           </div>
           <div
             style={{
@@ -256,4 +235,4 @@ Main.propTypes = {
   setWrapperRef: PropTypes.func.isRequired
 }
 
-export default withBreakpoints(Main)
+export default Main
