@@ -9,7 +9,7 @@ utilizing the `Dimension V2` starter for Gatsby.js.
 ## Usage
 
 You can view my website that is built with this repo at
-[https://ash.ashwigltd.com](https://ash.ashwigltd.com), but if you
+[https://ashhellwig.netlify.app](https:///ashhellwig.netlify.app), but if you
 wish to try building it locally please read the details below.
 
 ## Local Development

@@ -69,7 +69,7 @@ export default class ContactForm extends React.Component {
             type="hidden"
             name="subject"
             data-remove-prefix
-            value="New contact form submission on ash.ashwigltd.com"
+            value="New contact form submission on /ashhellwig.netlify.app"
             id="contact-form-field-subject"
           />
           {/* END: Form Field: Subject */}

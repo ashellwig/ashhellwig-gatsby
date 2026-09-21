@@ -40,6 +40,7 @@ const Layout = ({ children, location }) => {
           site {
             siteMetadata {
               title
+              description
             }
           }
         }
@@ -51,11 +52,12 @@ const Layout = ({ children, location }) => {
             meta={[
               {
                 name: 'description',
-                content: 'Personal website for Ashton S. Hellwig'
+                content: data.site.siteMetadata.description
               },
               {
                 name: 'keywords',
-                content: 'personal, site, developer, portfolio'
+                content:
+                  'Ash Hellwig, systems engineer, cloud engineer, Python developer, CMMC, NIST SP 800-171, DFARS 7012, CUI, ITAR, GCC High, Proofpoint, Exchange, Entra ID, PowerShell, Colorado'
               }
             ]}
           >

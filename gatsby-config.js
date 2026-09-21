@@ -3,7 +3,7 @@ module.exports = {
     title: 'Ash Hellwig',
     author: 'Ash Hellwig',
     description:
-      'Personal website for Ash Hellwig based on Dimension by HTML5 UP',
+      'Ash Hellwig — Colorado-based systems and cloud engineer and Python developer. Exchange, Proofpoint, and Microsoft GCC High migrations with CMMC, NIST SP 800-171, DFARS 7012, and CUI/ITAR compliance.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -31,7 +31,12 @@ module.exports = {
       ],
       },
     },
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        implementation: require('sass'),
+      },
+    },
   ],
   flags: {
     DEV_SSR: false

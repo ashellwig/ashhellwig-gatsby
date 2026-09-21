@@ -91,15 +91,73 @@ class Main extends React.Component {
             <img src={holdingIchigo} alt="" />
           </span>
           <p>
-            Colorado-based BigData Data Engineer and experienced Python
-            developer. Most of the industries I focus on are financial
-            technology, oil &amp; gas, and medical technology.
+            Colorado-based systems engineer and Python developer working at the
+            intersection of infrastructure, data, and regulatory compliance. I
+            build, migrate, and operate systems in regulated environments where
+            data handling, access control, and auditability are non-negotiable.
           </p>
           <p>
-            Experienced TeraData, Hive, and Python developer. In this industry,
-            my main focus is on the&nbsp; &quot;
+            Currently, I am leading the migration of on-premise Exchange 2016
+            and Proofpoint from Jeppesen/Boeing to cloud-based IAM and email
+            security services as part of the divestiture of Jeppesen from
+            Boeing. That work runs under a defense-contractor compliance
+            posture, so I maintain cybersecurity operations and data-handling
+            controls throughout the migration.
+          </p>
+          <h3>Compliance &amp; Security</h3>
+          <ul>
+            <li>
+              <b>CMMC</b> &mdash; working knowledge of the practice domains and
+              how they map to day-to-day system administration and change
+              control.
+            </li>
+            <li>
+              <b>NIST SP 800-171</b> &amp; <b>DFARS 252.204-7012</b> &mdash;
+              implementing and maintaining the required safeguards for
+              Controlled Unclassified Information on covered contractor
+              information systems.
+            </li>
+            <li>
+              <b>CUI / ITAR</b> &mdash; export-controlled and controlled
+              unclassified data handling: identifying what is in scope, keeping
+              it inside authorized boundaries, and ensuring only U.S. persons
+              with a need-to-know have access.
+            </li>
+            <li>
+              <b>Microsoft GCC High</b> &mdash; operating in and migrating into
+              the sovereign U.S. government cloud (Exchange Online, Entra ID)
+              where ITAR/CUI workloads are required to live.
+            </li>
+            <li>
+              <b>Proofpoint</b> &mdash; email security, mail-flow routing, and
+              data-loss prevention during a cross-tenant migration, keeping
+              mailboxes protected and reportable at every stage.
+            </li>
+            <li>
+              <b>Exchange &amp; PowerShell</b> &mdash; built an extensive
+              PowerShell module from the ground up to report on and move
+              mailboxes between destinations with a full audit trail.
+            </li>
+            <li>
+              <b>Identity &amp; Access</b> &mdash; automated account
+              provisioning on Microsoft Entra ID via serverless functions and
+              webhooks, so joiner/mover/leaver events are enforced rather than
+              remembered.
+            </li>
+          </ul>
+          <p>
+            Before this, I built regulatory reporting pipelines in financial
+            technology at American Express (TeraData, Hive, and Python,
+            producing regulator-mandated reports for FR, MX, IT, and NL) and
+            served as an IT Systems Administrator and Compliance Officer in
+            Colorado&apos;s regulated cannabis industry, automating
+            &quot;seed-to-sale&quot; state reporting against METRC. Compliance
+            has been a thread through most of my career, not a recent add-on.
+          </p>
+          <p>
+            My main focus is on the&nbsp; &quot;
             <i>backend and systems-side</i>&quot;&nbsp; of development. Please
-            see myresume under&nbsp;
+            see my resume under&nbsp;
             <i>experience</i> for more information.
           </p>
           <p>

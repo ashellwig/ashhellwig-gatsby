@@ -21,7 +21,10 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>Ash Hellwig</h1>
-        <p>Experienced Data Engineer and Python Developer</p>
+        <p>
+          Systems &amp; Cloud Engineer &middot; Python Developer &middot; CMMC /
+          NIST 800-171 / ITAR Compliance
+        </p>
       </div>
     </div>
     <nav>
