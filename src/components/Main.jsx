@@ -82,7 +82,12 @@ class Main extends React.Component {
             data handling, access control, and auditability are non-negotiable.
           </p>
           <p>
-            Currently, I am leading the migration of on-premise Exchange 2016
+            Currently, I am working as a DevOps engineer at Jeppesen ForeFlight,
+            migrating legacy on-premise applications and Azure applications to
+            AWS and containerizing locally-developed applications.
+          </p>
+          <p>
+            Previously, I was leading the migration of on-premise Exchange 2016
             and Proofpoint from Jeppesen/Boeing to cloud-based IAM and email
             security services as part of the divestiture of Jeppesen from
             Boeing. That work runs under a defense-contractor compliance
